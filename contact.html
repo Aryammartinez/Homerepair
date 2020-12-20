@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <link  rel="icon" href="/images/favicon.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery/dist/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="social-bar">
+        <a href="https://api.whatsapp.com/message/7KDPTPZLR65TF1"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-mail-bulk"></i></a>
+    </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logotype3.png" alt=""></a>
+            </div>
+            <a href="index.html">Inicio</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    
+    <section class="form_wrap">
+        <section class="contact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION <br> DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span>Homerepairservicio@gmail.com</p>
+                <p><span class="fa fa-mobile"></span>+56 9 3146 8201</p>
+            </section>
+        </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Contacta con Home Repair</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
